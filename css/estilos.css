@@ -35,10 +35,15 @@ nav a:hover{
 }
 .main.elem-red{
     display:flex;
-    justify-content: center;
+
     align-items:flex-start;
+    flex-wrap: wrap;
     margin-top:35px;
     position:relative;
+}
+
+.fullrow{
+    flex-basis: 100%;
 }
 
 .elem-red{
@@ -46,8 +51,8 @@ nav a:hover{
     
     
 }
-.elem-red > .label,.elem-red > .endlabel{
-    background: rgb(247, 30, 102);;
+.elem-red .label,.elem-red .endlabel{
+    background: rgb(247, 30, 102);
 }
 .elem-red  .endlabel{
     position:absolute;
@@ -70,9 +75,10 @@ nav a:hover{
     
 }
 #content{
-    width:75%;
+    flex-basis:73.5%;
     display:flex;
     flex-wrap: wrap;
+    margin-left: 0.5%;
   /* A */
     
 }
@@ -84,8 +90,7 @@ article,aside, .row{
 }
 
 #sidebar{
-    width:25%;
-
+    flex-basis:25%;
 }
 .six.columns, form > label:first-of-type, .label-body{
     font-weight:bolder;
