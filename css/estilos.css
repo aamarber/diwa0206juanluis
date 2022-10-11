@@ -1,0 +1,151 @@
+/* *********************************
+ Practica 0206
+ Diseño de Interfaces WEB
+ Desarrollo de Aplicaciones WEB
+***********************************/
+
+/* reinicio márgenes */
+* { margin: 0px; padding: 0px }
+
+body 
+{
+    font-family: verdana, sans-serif; 
+    font-size: small;
+}
+nav{
+    background-color: rgb(55, 215, 236);
+    text-align: end;
+    position:fixed;
+    width:100%;
+    height:35px;
+    top:0;
+    z-index:10;
+}
+nav li{
+    display: inline-block;
+    padding:10px;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+}
+nav a:hover{
+    color:black;
+}
+.main.elem-red{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top:35px;
+    position:relative;
+}
+
+.elem-red{
+    border:2px solid rgb(247, 30, 102);
+    
+    
+}
+.elem-red > .label,.elem-red > .endlabel{
+    background: rgb(247, 30, 102);;
+}
+.elem-red  .endlabel{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+#content .label, #content  .endlabel,aside .label, aside .endlabel{
+    background-color:rgb(44, 163, 179);
+}
+
+#content, article, aside{
+    border:2px solid rgb(55, 215, 236);
+    position:relative;    
+}
+#content .endlabel{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    
+}
+#content{
+    width:75%;
+    display:flex;
+    flex-wrap: wrap;
+  /* A */
+    
+}
+article,aside, .row{
+   margin:10px 10px 10px 10px;
+}
+#content article:last-of-type{
+    margin-bottom:35px;
+}
+
+#sidebar{
+    width:25%;
+
+}
+.six.columns, form > label:first-of-type, .label-body{
+    font-weight:bolder;
+} 
+.row {
+    display: flex;
+    flex-flow:wrap;
+    
+    
+}
+.six.columns {
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+  
+}
+#search form{
+    display:flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+    align-items: center;
+    
+}
+form{
+    position:relative;
+   
+}
+form textarea{
+    width:90%;
+    margin:10px;
+    padding:25px;
+    
+}
+label[for="exampleMessage"], .label-body{
+  padding:12px;
+}
+input[type="checkbox"]{
+    margin-left:5px;
+}
+.button-primary{
+    width:100%;
+    padding:15px;
+    margin:4px;
+    background: rgb(3, 137, 155);
+    font-weight: bolder;
+}
+#blocks ul {
+    overflow: hidden;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+}
+#blocks ul li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background:orange;
+    width:70px;
+    height:70px;
+    margin:8px;    
+    color:white;
+}
